@@ -18,7 +18,7 @@ def game():
             
             return redirect("https://www.websudoku.com/")
         else:
-            return "invalid key"
+            return "<center><h1>Invalid key</h1></center>"
        
 
     return render_template('index.html')
@@ -26,4 +26,4 @@ def game():
 
 
 if __name__ == '__main__':
-   app.run(debug = True)
+   app.run(debug = False)
